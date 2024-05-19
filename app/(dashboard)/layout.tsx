@@ -10,6 +10,7 @@ import PostImage1 from "@/components/post1.jpeg";
 import PostImage2 from "@/components/trist.jpg";
 import eimg from "@/components/oip.jpeg";
 const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
+    
     const heading = "Your Upcoming Events";
   const heading2 = "Upcoming Birthdays";
   const PostId = "Ahmed Mukhtar Shared ";
@@ -23,14 +24,9 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
             <div className="w-24 md:block ">
                 <SidebarDashboard />
             </div>
-
-
-
             <div className="">
             <Inputbox />
           </div>
-
-
             <div className="flex flex-col flex-grow overflow-hidden">
         <div className="flex">
           <div className="w-1/6">
@@ -72,10 +68,6 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </div>
-
-
-
-
             <div className="w-full">
                 <NavbarDashboard />
                 {/* flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6 */}
@@ -84,5 +76,4 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
         </div>
     );
 };
-
 export default DashboardLayout;
